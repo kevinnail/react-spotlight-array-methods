@@ -16,8 +16,21 @@
   "type": "module",
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "error-affirmations": "^1.2.1",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "^2.5.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "error-affirmations",
+        {
+          "color": "rainbow",
+          "border": "waves"
+        }
+      ]
+    ]
   }
 }
